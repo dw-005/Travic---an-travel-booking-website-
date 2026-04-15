@@ -1,0 +1,344 @@
+@media (max-width: 1024px) {
+  .subscribe_text h2 {
+    font-size: 32px;
+  }
+  /* Blog Secction */
+  .blog .l_col_33 {
+    text-align: center;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .blog_cart {
+    padding: 10px 0;
+  }
+  .filter-group {
+    overflow-x: auto;
+    /* ... */
+  }
+}
+
+@media (max-width: 991px) {
+  .header_upper {
+    display: none !important;
+  }
+  .l_container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .nav_content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  /* Hamburger Icon Styling */
+  .navbar-toggler {
+    border: 1px solid var(--theme-color);
+    padding: 5px 8px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+  }
+  .dropdown-menu li:hover > .submenu {
+    display: block;
+  }
+  /* Tour Section */
+  .tour-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-title {
+    font-size: 2rem;
+  }
+  /* Toue Section */
+  .l_col_25 {
+    max-width: 50%;
+    flex: 0 0 50%; /* Shows 2 cards */
+    padding: 0 15px;
+  }
+  /* Blog Secction */
+  .blog .l_col_33 {
+    text-align: center;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  /* Footer Section */
+  .footer .l_col_50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .links_wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .link_group {
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  /* This Section is for Contact Responsive  */
+  .l_col_70,
+  .l_col_30,
+  .l_col_50 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .l_col_30 {
+    margin-top: 50px;
+  }
+  .communication {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .communication img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .footer .logo a {
+    display: flex;         /* Changes from block to flex */
+    justify-content: center; /* Centers the image inside the link */
+    margin: 0 auto;        /* Ensures the link container itself is centered */
+  }
+  .logo {
+    display: block;        
+    text-align: center;  
+    margin: 0 auto 20px;     
+  }
+  .description{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact_info{
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+/* Mobile Devices (under 768px) */
+@media (max-width: 767px) {
+  .header_upper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .upper_header_right {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%;
+    gap: 15px;
+  }
+  .info_list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+  .form_group {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .logo_box {
+    margin-bottom: 10px;
+  }
+  .info_list li,
+  .form_group {
+    margin-left: 0;
+  }
+  body ol,
+  body ul {
+    padding-left: 0;
+  }
+  /* Hero Section */
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .search-bar {
+    flex-direction: column;
+    bottom: 20px;
+    gap: 15px;
+  }
+  .search-item {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .btn-find {
+    padding: 15px;
+  }
+  .hero {
+    height: 120vh;
+  }
+  /* About Section */
+  .l_col_50 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .image-grid {
+    margin-top: 40px;
+  }
+
+  .img-left {
+    padding-top: 0;
+  }
+  /* Tour Section */
+  .tour_packadges .title {
+    font-size: 16px;
+  }
+
+  .Visited_places .l_col_33 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  /* Tour Packdges section */
+  .tour_packadges .l_row {
+    justify-content: center; 
+  }
+
+  .tour_packadges .l_col_25 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .tour-card {
+    margin: 10px auto; 
+    max-width: 350px;  
+    width: 100%;
+  }
+  /* Tour Type sECTIONS */
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -40px !important;
+  }
+  .hero_section,
+  .testimonial_section {
+    margin-bottom: 60px !important;
+  }
+  /* Subscribe Section */
+  .subscribe_content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subscribe_form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .subscribe_text h2 {
+    font-size: 28px;
+  }
+  .subscribe_text br {
+    display: none;
+  }
+  .subscribe_form input,
+  .subscribe_form button {
+    width: 100%;
+    justify-content: center;
+  }
+  /* Blog Secction */
+  .blog .l_col_33 {
+    text-align: center;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  /* This is for Contact Responsive  */
+  .hero-contact {
+    height: 250px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .contact_information h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .tour_packadges .l_col_25 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-img-container {
+    height: 200px !important;
+  }
+  .tour_packadges .title {
+    font-size: 20px;
+  }
+  /* Feature Section */
+  .features_section .l_col_25 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 480px) {
+  .filter-group {
+    justify-content: flex-start;
+    overflow-x: auto; 
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  /* Footer Section */
+  .footer_bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social_icons {
+    margin-top: 20px;
+  }
+  .link_group {
+    flex: 0 0 100%;
+  }
+  .contact_infor ul li .des {
+  width: calc(100% - 180px);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin:  0 auto;
+}
+}
+@media (max-width: 400px) {
+  .form_group {
+    min-width: 280px;
+  }
+
+  .logo_box img {
+    max-width: 180px;
+  }
+  input[type="search"] {
+    height: 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 10px 10px 20px;
+  }
+}
+@media (max-width: 340px) {
+  .info_list li {
+    font-size: 13px;
+  }
+  .tour_type_section {
+    padding-bottom: 0;
+  }
+}

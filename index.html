@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travic Tour and Travel Agency</title>
+    <link rel="icon" type="image/png" href="images/title_logo.jpg" />
+
+    <!-- Font Awsome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BoosTstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- External Responsive Css -->
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_upper d-none d-lg-flex">
+        <div
+          class="l_container d-flex justify-content-between align-items-center w-100"
+        >
+          <div class="logo_box">
+            <a href="index.html" class="d-block"
+              ><img src="images/logo.jpg" alt="Logo" loading="lazy"
+            /></a>
+          </div>
+          <div class="upper_header_right">
+            <ul class="info_list">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:912136660027">+91-213-666-0027</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+            </ul>
+            <div class="serach">
+              <form action="" method="get">
+                <div class="form_group">
+                  <input type="search" placeholder="Search..." />
+                  <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_lower">
+        <nav class="navbar navbar-expand-lg custom-nav">
+          <div class="l_container">
+            <div class="nav_content_wrapper">
+              <a class="navbar-brand d-lg-none" href="index.html">
+                <img src="images/logo.jpg" alt="Logo" loading="lazy" />
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse d-none d-lg-block"
+                id="navMenu"
+              >
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank"
+                      >ABOUT</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      >PAGES</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="destination.html"
+                          target="_blank"
+                          class="dropdown-item"
+                          >Destination</a
+                        >
+                      </li>
+                      <li><a href="#" class="dropdown-item">Tours</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html" target="_blank"
+                      >BLOG</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_blank"
+                      >CONTACT US</a
+                    >
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link account-btn" href="#" target="_blank"
+                      ><i class="fa-regular fa-user"></i> My Account</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="offcanvas offcanvas-start d-lg-none"
+                tabindex="-1"
+                id="offcanvasNavbar"
+              >
+                <div class="offcanvas-header">
+                  <img
+                    src="images/logo.jpg"
+                    alt="Logo"
+                    style="max-height: 40px"
+                  />
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        href="index.html"
+                        target="_blank"
+                        >HOME</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html" target="_blank"
+                        >ABOUT</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">PAGES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html" target="_blank"
+                        >BLOG</a
+                      >
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link" href="contact.html" target="_blank"
+                        >CONTACT US</a
+                      >
+                    </li>
+                    <li class="nav-item mb-3">
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:912136660027">+91-213-666-0027</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                      <i class="fa-regular fa-envelope"></i>
+                      <a href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                  </ul>
+                  <div class="mt-4">
+                    <a
+                      href="#"
+                      class="theme_btn w-100 text-center d-block offcanvas_btn"
+                      >BOOK NOW</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========================-->
+    <!-- Banner Section -->
+    <!-- ======================= -->
+    <section class="hero">
+      <div class="slider-container">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+      </div>
+
+      <div class="content">
+        <i>Discover the Planet...</i>
+        <h1>Creating memories that last...</h1>
+        <div>
+          This statistic is based on our average personal current account online
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search_bar">
+      <div class="l_container">
+        <div class="search-bar">
+          <div class="search-item">
+            <label>Your Destination</label>
+            <select>
+              <option>Select Location</option>
+            </select>
+          </div>
+          <div class="search-item">
+            <label>Travel Category</label>
+            <select>
+              <option>Adventure</option>
+            </select>
+          </div>
+          <div class="search-item">
+            <label>When to Start</label>
+            <select>
+              <option>Select Date</option>
+            </select>
+          </div>
+          <div class="search-item">
+            <label>How many Guest</label>
+            <select>
+              <option>1 Guest</option>
+            </select>
+          </div>
+          <button class="btn-find">Find Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== -->
+    <!-- About Section -->
+    <!-- ===================== -->
+    <section class="about_section">
+      <div class="l_container">
+        <div class="l_row">
+          <div class="l_col_50">
+            <div class="about-content">
+              <span class="subtitle">About us</span>
+              <div>
+                <h2 class="main-title">
+                  Planning a trip should be very exciting adventure
+                </h2>
+              </div>
+              <div>
+                <div class="description">
+                  We're dedicated to offering exceptional value for your travel
+                  investment. Our relationships with trusted travel partners
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="icon-box">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                </div>
+                <div class="text-box">
+                  <h3>International Tours</h3>
+                  <div>
+                    Our team of travel professional brings a wealth of knowledge
+                    and expertise to the table.
+                  </div>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="icon-box">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                </div>
+                <div class="text-box">
+                  <h3>Multiple Options to Choose</h3>
+                  <div>
+                    Planning trip should be an exciting adventure, not stressful
+                    ordeal. Let us handle the logistics
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_50">
+            <div class="image-grid">
+              <div class="img-left">
+                <figure>
+                  <img
+                    src="images/about/about-2.jpg"
+                    alt="Travel Destination"
+                  />
+                </figure>
+              </div>
+              <div class="img-right">
+                <img
+                  src="images/about/about-1.jpg"
+                  alt="Desert"
+                  class="top-img"
+                />
+                <img
+                  src="images/about/about-3.jpg"
+                  alt="Beach"
+                  class="bottom-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!-- Features Section -->
+    <!-- ========================== -->
+    <section class="features_section">
+      <div class="l_container">
+        <div class="feature_title">
+          <span class="feature_subtitle">We are best</span>
+          <h2>Why Choose Travic</h2>
+        </div>
+        <div class="feature_content">
+          <div class="l_row">
+            <div class="l_col_25">
+              <div class="feature_cart">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h4>Flexible Payment</h4>
+                <div>
+                  We are dedicated to offering the exceptional value for your
+                  travel the best investment
+                </div>
+              </div>
+            </div>
+
+            <div class="l_col_25">
+              <div class="feature_cart">
+                <i class="fa-regular fa-credit-card"></i>
+                <h4>No Change Fees</h4>
+                <div>
+                  Your journey with us is about only your relaxation, enjoyment,
+                  and more discovery.
+                </div>
+              </div>
+            </div>
+
+            <div class="l_col_25">
+              <div class="feature_cart">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <h4>Flex Deposit</h4>
+                <div>
+                  Ready to start your next adventure? Contact us today to begin
+                  planning your dream
+                </div>
+              </div>
+            </div>
+
+            <div class="l_col_25">
+              <div class="feature_cart">
+                <i class="fa-solid fa-coins"></i>
+                <h4>Pay Securely</h4>
+                <div>
+                  Feel free to adapt and customize this text to fit your travel
+                  agency with secure Payment
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================== -->
+    <!-- Tour Packages Sections -->
+    <!-- =================================== -->
+
+    <section class="tour_packadges">
+      <div class="l_container">
+        <p class="tour_packadge_title">Tour Packages</p>
+        <nav class="tour-navbar">
+          <h2 class="nav-title">Featured Tours</h2>
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".usa">USA</button>
+            <button class="filter-btn" data-filter=".england">England</button>
+            <button class="filter-btn" data-filter=".egypt">Egypt</button>
+            <button class="filter-btn" data-filter=".india">India</button>
+            <button class="filter-btn" data-filter=".europe">Europe</button>
+            <button class="filter-btn" data-filter=".america">America</button>
+          </div>
+        </nav>
+
+        <div class="l_row" id="tour-grid">
+          <div class="l_col_25 whole_card egypt india europe">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img
+                    src="images/tour cart/tour-1.jpg"
+                    alt="Turkey"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <span class="badge">★ 4.8</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">JAPAN</div>
+                <div>
+                  <h3 class="title">Beauty of Istanbul Turkey</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$199</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 6 Nights / 7 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa england egypt india america">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-2.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">USA</div>
+                <div>
+                  <h3 class="title">Wildness of California</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$250</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 4 Nights / 5 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card england india america">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-3.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">MALDIVES</div>
+                <div>
+                  <h3 class="title">Ocean on the Maldives</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$150</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 5 Nights / 6 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa england india america">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-4.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">AFRICA</div>
+                <div>
+                  <h3 class="title">The Hills and Mountains</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$299</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 6 Nights / 7 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa england india europe america">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-5.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">ITALY</div>
+                <div>
+                  <h3 class="title">History of The Emporer</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$199</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 6 Nights / 7 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa india europe">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-6.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">CHINA</div>
+                <div>
+                  <h3 class="title">The old Empire of China</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$250</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 3 Nights / 4 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa europe">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-7.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">INDIA</div>
+                <div>
+                  <h3 class="title">History of the Mughals</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$119</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> 2 Nights / 3 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_25 whole_card usa egypt europe america">
+            <div class="tour-card">
+              <div class="card-img-container">
+                <figure>
+                  <img src="images/tour cart/tour-8.jpg" alt="USA" />
+                </figure>
+
+                <span class="badge">★ 5</span>
+              </div>
+              <div class="card-body">
+                <div class="tag">USA</div>
+                <div>
+                  <h3 class="title">The New York City Tour</h3>
+                </div>
+
+                <div class="price-line">
+                  From - <span class="price">$239</span>
+                </div>
+                <div class="meta">
+                  <i class="far fa-clock"></i> p Nights / 6 Days
+                </div>
+                <a href="#" class="btn-explore">Explore more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- Tour Type Section -->
+    <!-- ================================ -->
+    <section class="tour_type_section">
+      <div class="l_container">
+        <div class="tour_type_header">
+          <div class="subtitle">Tour Types</div>
+          <h2>Find Adventure in Life</h2>
+        </div>
+
+        <div class="swiper tour_type_Swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_1.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>City Tour</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_2.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>Beach Party</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_3.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>Museum Tour</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_4.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>Cruise Ship</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_5.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>Explore History</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img
+                      src="images/tour_types/img_6.jpg"
+                      alt="hiking & Diving"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <h4>Hiking & Diving</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img src="images/tour_types/img_1.jpg" alt="Cruise" />
+                  </figure>
+                </div>
+                <h4>City Tour</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tour_type_card">
+                <div class="image_box">
+                  <figure class="image_box_image">
+                    <img src="images/tour_types/img_2.jpg" alt="Cruise" />
+                  </figure>
+                </div>
+                <h4>Beach Party</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== -->
+    <!-- Visiting Places  -->
+    <!-- ======================== -->
+
+    <section class="Visited_places">
+      <div class="l_container">
+        <div class="visited_places_header">
+          <div class="subtitle">Top Places</div>
+          <h2>Top Visited Places</h2>
+        </div>
+
+        <div class="l_row">
+          <div class="l_col_33">
+            <div class="place-card card_1">
+              <div class="overlay">
+                <span class="place-name">China</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="place-card card_2">
+              <div class="overlay">
+                <span class="place-name">Italy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="place-card card_3">
+              <div class="overlay">
+                <span class="place-name">India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="place-card card_4">
+              <div class="overlay">
+                <span class="place-name">Egypt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="place-card card_5">
+              <div class="overlay">
+                <span class="place-name">New York</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="place-card card_6">
+              <div class="overlay">
+                <span class="place-name">Maldives</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ -->
+    <!-- Testimonial Section -->
+    <!-- ============================ -->
+    <section class="testimonial">
+      <div class="l_container">
+        <div class="testimonial_header">
+          <div class="subtitle">Testimonials</div>
+          <h2>Love from our clients</h2>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_content">
+                <div class="swiper_content_upper">
+                  <div class="swiper_content_author">
+                    <figure>
+                      <img
+                        src="images/testimonials/testimonial_1.jpg"
+                        alt="person"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figcaption>
+                      <h3>Adam Gilchrist</h3>
+                      <span class="designation">Manager</span>
+                    </figcaption>
+                  </div>
+                  <ul class="rating">
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper_content_lower">
+                  <p>
+                    “Fames gravid nulam lectus vivera placert utricies. Lorem
+                    ipsum dolor sit ametional consectetur. Vel est ac sit amet
+                    tincidunt vel turpis penabus. Fusce eleifend suscipit Vel
+                    est ac sit amet ”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper_content">
+                <div class="swiper_content_upper">
+                  <div class="swiper_content_author">
+                    <figure>
+                      <img
+                        src="images/testimonials/testimonial_2.jpg"
+                        alt="person"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figcaption>
+                      <h3>Jonathan Blue</h3>
+                      <span class="designation">Manager</span>
+                    </figcaption>
+                  </div>
+                  <ul class="rating">
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper_content_lower">
+                  <p>
+                    “Fames gravid nulam lectus vivera placert utricies. Lorem
+                    ipsum dolor sit ametional consectetur. Vel est ac sit amet
+                    tincidunt vel turpis penabus. Fusce eleifend suscipit Vel
+                    est ac sit amet ”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper_content">
+                <div class="swiper_content_upper">
+                  <div class="swiper_content_author">
+                    <figure>
+                      <img
+                        src="images/testimonials/testimonial_1.jpg"
+                        alt="person"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figcaption>
+                      <h3>Jonathan Blue</h3>
+                      <span class="designation">Manager</span>
+                    </figcaption>
+                  </div>
+                  <ul class="rating">
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper_content_lower">
+                  <p>
+                    “Fames gravid nulam lectus vivera placert utricies. Lorem
+                    ipsum dolor sit ametional consectetur. Vel est ac sit amet
+                    tincidunt vel turpis penabus. Fusce eleifend suscipit Vel
+                    est ac sit amet ”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper_content">
+                <div class="swiper_content_upper">
+                  <div class="swiper_content_author">
+                    <figure>
+                      <img
+                        src="images/testimonials/testimonial_2.jpg"
+                        alt="person"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figcaption>
+                      <h3>Adam Gilchrist</h3>
+                      <span class="designation">Manager</span>
+                    </figcaption>
+                  </div>
+                  <ul class="rating">
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                    <li>
+                      <img src="images/star.png" alt="star" loading="lazy" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper_content_lower">
+                  <p>
+                    “Fames gravid nulam lectus vivera placert utricies. Lorem
+                    ipsum dolor sit ametional consectetur. Vel est ac sit amet
+                    tincidunt vel turpis penabus. Fusce eleifend suscipit Vel
+                    est ac sit amet ”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= -->
+    <!-- Blog Section -->
+    <!-- ======================= -->
+    <section class="blog">
+      <div class="l_container">
+        <div class="blog_header">
+          <p class="subtitle">Our Blog</p>
+          <h2>Get Latest News Update</h2>
+        </div>
+
+        <div class="l_row">
+          <div class="l_col_33">
+            <div class="blog_cart">
+              <div class="blog_cart_upper">
+                <figure>
+                  <a href="#"
+                    ><img
+                      src="images/blog_images/img_1.jpg"
+                      alt="travel blog"
+                      loading="lazy"
+                  /></a>
+                </figure>
+              </div>
+              <div class="blog_cart_lower">
+                <ul class="blog_info">
+                  <li><a href="#" class="blog_btn">Travel Blog</a></li>
+                  <li><i class="fa-regular fa-calendar"></i>20 Mar, 2026</li>
+                </ul>
+                <h3>
+                  <a href="#"
+                    >10 European ski destinations you should visit this
+                    winter</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="blog_cart">
+              <div class="blog_cart_upper">
+                <figure>
+                  <a href="#"
+                    ><img
+                      src="images/blog_images/img_2.jpg"
+                      alt="travel blog"
+                      loading="lazy"
+                  /></a>
+                </figure>
+              </div>
+              <div class="blog_cart_lower">
+                <ul class="blog_info">
+                  <li><a href="#" class="blog_btn">Covid Trial</a></li>
+                  <li><i class="fa-regular fa-calendar"></i>19 Mar, 2026</li>
+                </ul>
+                <h3>
+                  <a href="#"
+                    >Booking travel during Corona: Find who are giving
+                    service</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="l_col_33">
+            <div class="blog_cart">
+              <div class="blog_cart_upper">
+                <figure>
+                  <a href="#"
+                    ><img
+                      src="images/blog_images/img_3.jpg"
+                      alt="travel blog"
+                      loading="lazy"
+                  /></a>
+                </figure>
+              </div>
+              <div class="blog_cart_lower">
+                <ul class="blog_info">
+                  <li><a href="#" class="blog_btn">Europe</a></li>
+                  <li><i class="fa-regular fa-calendar"></i>18 Mar, 2026</li>
+                </ul>
+                <h3>
+                  <a href="#"
+                    >Change your place and get the fresh air from the nature</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Subscribe Section -->
+    <!-- ============================== -->
+
+    <section class="subscribe_section">
+      <div class="l_container">
+        <div class="subscribe_container">
+          <div class="subscribe_content">
+            <div class="subscribe_text">
+              <h2>
+                Subscribe for latest update <br />
+                about Travelling
+              </h2>
+            </div>
+
+            <form class="subscribe_form" action="#">
+              <input type="email" placeholder="Email Address*" required />
+              <button type="submit">
+                Subscribe
+                <span class="arrow">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+
+    <footer class="footer">
+      <div class="l_container">
+        <div class="footer_container">
+          <div class="patter_layer"></div>
+          <div class="l_row footer_content_box">
+            <div class="l_col_50">
+              <div class="brand_section">
+                <div class="logo">
+                  <a href="index.html" class="d-block"
+                    ><img src="images/logo-2.png" alt="Travic" loading="lazy"
+                  /></a>
+                </div>
+                <div class="description">
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet morning of spring which
+                </div>
+                <div class="contact_info">
+                  <a href="mailto:info@support.com">info@support.com</a>
+                  <a href="tel:(+55) 123-456-7890">(+55) 123-456-7890</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="l_col_50">
+              <div class="links_wrapper">
+                <div class="link_group">
+                  <div>About</div>
+                  <ul>
+                    <li>
+                      <a href="about.html" target="_blank">About Company</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" target="_blank">Contact us</a>
+                    </li>
+                    <li><a href="#">Become Host</a></li>
+                    <li><a href="#">Associations</a></li>
+                    <li><a href="#">Media News</a></li>
+                    <li><a href="#">Travel Guide</a></li>
+                  </ul>
+                </div>
+                <div class="link_group">
+                  <div>Top Cities</div>
+                  <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Dubai</a></li>
+                    <li><a href="#">California</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Las Vegas</a></li>
+                    <li><a href="#">New York City</a></li>
+                  </ul>
+                </div>
+                <div class="link_group">
+                  <div>Top Countries</div>
+                  <ul>
+                    <li><a href="#">United State</a></li>
+                    <li><a href="#">Belgium</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">United Kingdom</a></li>
+                    <li><a href="#">Mexico</a></li>
+                    <li><a href="#">Argentina</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_bottom">
+            <div class="footer_copyright">
+              Copyright &copy; 2026 <span><a href="index.html">Travic</a></span>, Inc. All Rights
+              Reserved
+            </div>
+            <div class="social_icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://in.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".tour_type_Swiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1399: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          799: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          575: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+    <!-- ========================= -->
+    <!-- This is Swiper CDN -->
+    <!-- ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          340: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+    <!-- ===================================== -->
+    <!-- This is Isotope  -->
+    <!-- ==================================== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var $grid = $("#tour-grid").isotope({
+          itemSelector: ".whole_card",
+          layoutMode: "fitRows",
+          percentPosition: true,
+        });
+
+        $(".filter-group").on("click", "button", function () {
+          var filterValue = $(this).attr("data-filter");
+          $grid.isotope({ filter: filterValue });
+
+          $(".filter-btn").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $grid.imagesLoaded().progress(function () {
+          $grid.isotope("layout");
+        });
+      });
+    </script>
+  </body>
+</html>

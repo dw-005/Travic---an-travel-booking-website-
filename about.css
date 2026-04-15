@@ -1,0 +1,391 @@
+/* Custom Styles to match Travic Vibe */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 1s;
+}
+:root {
+  --theme-color: #ff6b00;
+  --secondary-color: #ffc42e;
+  --text-color: #6a6a6a;
+  --title-color: #111111;
+  --testimonail-background: #f1f8ff;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/inter/Inter-Regular.otf) format(OpenType);
+}
+body {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Helps remove bottom whitespace in containers */
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+.l_container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.l_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.l_col_50 {
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+.l_col_33 {
+  flex: 0 0 33.33%; /* Fixed 25% width */
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+.l_col_25 {
+  flex: 0 0 25%; /* Fixed 25% width */
+  max-width: 25%;
+  padding: 0 15px;
+}
+
+/* ============================= */
+/* Nav Bar CSS */
+/* ============================= */
+
+.navbar-nav .nav-link {
+    color: var(--title-color)!important; 
+    font-weight: 500;
+    position: relative;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.dropdown-item:hover {
+    color: #ff5e14 !important; /* Orange */
+}
+.navbar-brand a{
+  max-width: 200px;
+}
+.dropdown-item {
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    padding-left: 1.5rem; 
+    background-color: transparent;
+}
+.nav-item:hover {
+    padding-left:0.5rem; 
+    background-color: transparent;
+    transition: 0.4s ease-in;
+}
+
+.offcanvas-body {
+    padding: 2rem 1.5rem;
+}
+
+.offcanvas-body .nav-item {
+    border-bottom: 1px solid #f8f9fa; 
+}
+
+/* ============================= */
+/* Bread Crumb Section */
+/* ============================= */
+.breadcrumb-area {
+  background-image: url("images/banner/banner_1.jpg");
+  padding: 100px 0;
+  background-size: cover;
+  position: relative;
+}
+.breadcrumb-area a {
+  color: var(--theme-color);
+}
+.breadcrumb-area a:hover {
+  color: var(--testimonail-background);
+  transition: 0.5s ease-in-out;
+}
+
+
+/* ============================= */
+/* About Section */
+/* ============================= */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.section-title {
+  margin-bottom: 50px;
+}
+.section-title span {
+  color: #ff6b6b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.about-intro {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.about-intro figure img{
+  min-height: 200px;
+}
+.video-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.video-btn a i {
+  position: relative;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.video-btn a:hover {
+  transform: scale(1.1);
+  background: var(--testimonail-background);
+}
+.btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 12px 30px;
+}
+/* ============================= */
+/* Stats Section */
+/* ============================= */
+
+.stat-box {
+  text-align: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.stat-box:hover {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.stat-number {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ff6b6b;
+  display: block;
+}
+/* ============================= */
+/* Oue Team Section */
+/* ============================= */
+.team-card {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.team-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.team-info {
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 107, 107, 0.9);
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  transition: 0.4s;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+}
+.our_team .team-card figure{
+  max-width: 600px;
+}
+
+/* ============================ */
+/* Footer Section */
+/* ============================ */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 80px 0 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+.brand_section .logo a{
+  max-width: 200px;
+}
+.footer_content_box {
+  padding-bottom: 85px;
+  border-bottom: 1px solid #ffffff1a;
+}
+.footer .patter_layer {
+  position: absolute;
+  background: url("images/footer_background.jpg");
+  left: 0;
+  bottom: 20;
+  width: 100%;
+  height: 560px;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  -webkit-animation: slide 60s linear infinite;
+}
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1920px 0;
+  }
+}
+.footer_container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.brand_section,
+.links_wrapper,
+.footer_bottom {
+  position: relative;
+  z-index: 3;
+}
+.logo figure a img {
+  display: inline-block;
+  max-width: 100%;
+}
+.description {
+  color: #fff;
+  line-height: 1.6;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+.contact_info a {
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.contact_info a:hover {
+  color: var(--theme-color);
+  transition: 0.5s ease-in;
+}
+.links_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.link_group div {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.link_group div:hover{
+   color: var(--secondary-color);
+   transition: 0.5s ease;
+}
+.link_group ul {
+  list-style: none;
+}
+.link_group ul li {
+  margin-bottom: 15px;
+}
+.link_group ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+.link_group ul li a:hover {
+  color: var(--theme-color);
+  transition: 0.5s ease-in;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b0b0;
+  font-size: 14px;
+  padding: 24px 0;
+}
+/* ========================================= */
+.footer_copyright,.footer_copyright span a  {
+  color: #fff;
+  font-weight: 400;
+  transition: all 500ms ease;
+}
+.footer_copyright span a:hover{
+  color: var(--theme-color);
+}
+
+/* ============================= */
+.footer_bottom a {
+  color: #fff;
+  font-weight: 400;
+  transition: all 500ms ease;
+}
+.footer-bottom a span {
+  color: var(--theme-color);
+}
+.social_icons a {
+  color: #ffffff99;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.social_icons a i {
+  font-weight: 400;
+  font-size: 18px;
+}
+.social_icons a i:hover {
+  color: var(--theme-color);
+  transition: 0.5s ease-in;
+}
